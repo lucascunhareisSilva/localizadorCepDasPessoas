@@ -1,0 +1,2 @@
+1)verificar as dependencias no Packege.json
+2)Instalar as dependencias local

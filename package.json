@@ -1,0 +1,19 @@
+{
+  "name": "nodetest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "install": "^0.13.0",
+    "name-to-gender": "^1.0.3",
+    "npm": "^11.21.1",
+    "prompt-sync": "^4.2.0"
+  }
+}
