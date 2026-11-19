@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+.inputs{
+	width: 60%;
+}
+:root{
+	background-color: var(--bulma-primary-80);
+}
+h1,label,button,input{
+  font-family: "Shantell Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "BNCE" 0,
+    "INFM" 0,
+    "SPAC" 0;
+}
+.message-body, .message-header{
+  display: none;
+}
+.message-body_two{
+  display: block;
+}
+.card{
+	background-color: var(--bulma-primary-35-invert);
+}
+.section{
+	background-color: var(--bulma-primary-80);
+}
+.title{
+	color:var(--bulma-primary-85);
+}

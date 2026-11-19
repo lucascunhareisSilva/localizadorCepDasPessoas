@@ -1,2 +1,5 @@
 1)verificar as dependencias no Packege.json
 2)Instalar as dependencias local
+3)rodar o server
+4)acessar as informações pelo app.js para buscar as informações
+

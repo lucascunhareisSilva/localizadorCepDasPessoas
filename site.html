@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+>
+<link rel="stylesheet" type="text/css" href="style.css">
+	<title>CADASTRO PESSOAL</title>
+</head>
+<body class="section">
+	<div class="container">
+	<div class="columns is-centered">
+	<div class="column is-half-desktop is-two-thirds-tablet">
+<div class="card">
+	<div class="card-content">
+		<h1 class="title has-text-centered mb-5">CADASTRAMENTO DE PESSOA</h1>
+		<form>
+			<div class="field">
+				<label class="label is-small" for="pessoa">NOME:</label>
+				<div class="control inputs">
+					<input type="text" class="input is-small" placeholder="nome" id="pessoa" required />
+				</div>
+			</div>
+			<div class="field">
+				<label for="nascimento" class="label is-small">DATA-NASCIMENTO:</label>
+				<div class="control inputs">
+				<input type="date" class="input is-small"  id="nascimento" required />
+				</div>
+			</div>
+			<div class="field">
+				<label class="label is-small" for="cpf">CPF:</label>
+				<div class="control inputs">
+				<input class="input is-small" type="text" placeholder="cpf" maxlength="11" id="cpf" required />
+				</div>
+			</div>
+			<div class="field">
+				<label for="cep" class="label is-small">CEP:</label>
+				<div class="control inputs">
+				<input type="text" class="input is-small" placeholder="cep" maxlength="8" id="cep" required />
+			</div>
+			</div>
+			<div class="field">
+				<label class="label is-small" for="numeroCasa">NUMERO DA CASA:</label>
+				<div class="control inputs">
+				<input class="input is-small" type="text" id="numeroCasa" maxlength="5" placeholder="numero da casa" required />
+			</div>
+			<!-- informações escrita dos cadastro -->
+			<div class="field mt-5">
+				<div class="control">
+					<article class="message is-dark">
+  			<div class="message-header">
+   			 
+  			</div>
+ 		 <div class="message-body has-text-grey-lighter">
+ 		 	<!-- informações -->
+  		</div>
+</article>
+				</div>
+			</div>
+			<div class="field mt-5">
+				<div class="control">
+					<div class="buttons is-centered">
+						<button class="button is-success is-rounded" type="submit" id="enviar">CADASTRAR USUARIO</button>
+						<button class="button is-info is-rounded" type="submit" id="exibir">Enviar e Exibir</button>
+						
+					</div>
+			</div>
+			</div>
+		</form>
+	</div>
+</div>
+</div>
+</div>
+</div>
+	<script type="module" src="./index.js"></script>
+</body>
+</html>

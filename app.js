@@ -1,6 +1,6 @@
 import Stats from "./web.js"; //base para dados pessoas
 import promptSync from "prompt-sync"; //leitura de pesquisa
-import baseDados from "./index.js"; //base de dados
+import baseDados from "./dados.js"; //base de dados
 import {guessGender}  from "name-to-gender";
 //entrada
 const prompt = promptSync();
@@ -32,7 +32,7 @@ let dadosPessoais = await baseDados;
 //painel de exibição
 dadosPessoais.forEach((itens)=>{
 	console.log("========================================");
-	console.log(`NOME: ${itens.nome}`);
+	console.log(`${itens.id}) NOME: ${itens.nome}`);
 	console.log(`DATA-NASCIMENTO: ${itens.datanascimento}`);
 	console.log(`CPF: ${itens.cpf}`);
 });
@@ -50,7 +50,7 @@ async function buscandoPessoa(id,dados){
 		console.log(`NOME: ${pessoa.nome}`);
 		console.log(`DATA-NASCIMENTO: ${pessoa.datanascimento}`);
 		console.log(`SEXO: ${genero}`);
-		console.log(`PROBABILIDADE: ${pbSexo}% DO GENERO`);	
+		console.log(`PROBABILIDADE: ${pbSexo}% DO GENERO ${genero.toUpperCase()}`);	
 		console.log(`CPF: ${pessoa.cpf}`);
 		console.log("BUSCANDO ENDEREÇOS....");
 		let num = 1;
